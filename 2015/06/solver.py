@@ -45,8 +45,8 @@ def execute_bright(lights, instruction):
   (command, x1, y1, x2, y2) = re.match("(.+) (\d+),(\d+) through (\d+),(\d+)", instruction).groups()
   [x1, y1, x2, y2] = map(int, [x1, y1, x2, y2])
 
-  for x in range(x1, x2 + 1):
-    for y in range(y1, y2 + 1):
+  for y in range(y1, y2 + 1):
+    for x in range(x1, x2 + 1):
       if command == "turn on":
         lights[x + GRID_SIZE * y] += 1
       elif command == "turn off" and lights[x + GRID_SIZE * y]:
@@ -80,7 +80,7 @@ def solver(file, progress=True):
   if progress:
     sys.stderr.write("\n")
 
-  for index in range(0, GRID_SIZE*GRID_SIZE):
+  for index in range(0, GRID_SIZE * GRID_SIZE):
     if lights[index]:
       number_lit += 1
     total_brightness += bright_lights[index]
