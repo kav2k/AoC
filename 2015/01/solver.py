@@ -9,7 +9,7 @@ import sys
 
 def chars(file, chunkSize=4096):
   """
-  Take a file object, reads it in chuncks and iterates over it one character at a time.
+  Take a file object, read it in chuncks and iterate over it one character at a time.
 
   Keyword arguments:
   file      --- a file object to iterate over
