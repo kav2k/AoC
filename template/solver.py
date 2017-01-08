@@ -4,6 +4,7 @@ Takes input from STDIN by default.
 
 (c) Alexander Kashev, 2017
 """
+import sys
 
 
 def solver(file):
@@ -20,7 +21,6 @@ def solver(file):
 
 
 if __name__ == "__main__":
-  import sys
   solution = solver(sys.stdin)
 
   print("Part A: Solution is {}.".format(solution[0]))

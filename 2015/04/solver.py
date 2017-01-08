@@ -4,6 +4,7 @@ Takes input from STDIN by default.
 
 (c) Alexander Kashev, 2017
 """
+import sys
 from hashlib import md5
 
 
@@ -49,7 +50,6 @@ def solver(file, progress=True, progress_step=10000):
 
 
 if __name__ == "__main__":
-  import sys
   solution = solver(sys.stdin)
 
   print("Part A: Smallest AdventCoin solution for 5 is {}.".format(solution[0]))

@@ -4,6 +4,7 @@ Takes input from STDIN by default.
 
 (c) Alexander Kashev, 2017
 """
+import sys
 import re
 
 GRID_SIZE = 1000
@@ -91,7 +92,6 @@ def solver(file, progress=True):
 
 
 if __name__ == "__main__":
-  import sys
   solution = solver(sys.stdin)
 
   print("Part A: After following instructions, {} lights are lit.".format(solution[0]))

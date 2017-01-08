@@ -4,6 +4,7 @@ Takes input from STDIN by default.
 
 (c) Alexander Kashev, 2017
 """
+import sys
 
 
 def unescape(string):
@@ -74,7 +75,6 @@ def solver(file):
 
 
 if __name__ == "__main__":
-  import sys
   solution = solver(sys.stdin)
 
   print("Part A: Length difference between code and data is {} characters.".format(solution[0]))

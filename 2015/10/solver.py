@@ -4,6 +4,7 @@ Takes input from STDIN by default.
 
 (c) Alexander Kashev, 2017
 """
+import sys
 
 
 def look_and_say(string):
@@ -42,7 +43,6 @@ def solver(file, progress=True):
   file          --- a file object to read input from
   progress      --- boolean, whether to output progress to STDERR
   """
-  import sys
   seed = file.readline()
   result = seed
 
@@ -60,7 +60,6 @@ def solver(file, progress=True):
 
 
 if __name__ == "__main__":
-  import sys
   solution = solver(sys.stdin)
 
   print("Part A: Length after 40 steps is {}.".format(solution[0]))

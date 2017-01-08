@@ -4,6 +4,7 @@ Takes input from STDIN by default.
 
 (c) Alexander Kashev, 2017
 """
+import sys
 
 
 def chars(file, chunkSize=4096):
@@ -73,7 +74,6 @@ def solver(file):
 
 
 if __name__ == "__main__":
-  import sys
   solution = solver(sys.stdin)
 
   print("Part A: Santa alone will deliver presents to {} houses.".format(solution[0]))

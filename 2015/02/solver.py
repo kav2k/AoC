@@ -4,6 +4,7 @@ Takes input from STDIN by default.
 
 (c) Alexander Kashev, 2017
 """
+import sys
 
 
 def parseBox(line):
@@ -36,7 +37,6 @@ def solver(file):
 
 
 if __name__ == "__main__":
-  import sys
   solution = solver(sys.stdin)
 
   print("Part A: Total wrapping paper required: {} square feet.".format(solution[0]))

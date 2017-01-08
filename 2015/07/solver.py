@@ -4,6 +4,7 @@ Takes input from STDIN by default.
 
 (c) Alexander Kashev, 2017
 """
+import sys
 import re
 
 
@@ -105,7 +106,6 @@ def solver(file):
 
 
 if __name__ == "__main__":
-  import sys
   solution = solver(sys.stdin)
 
   print("Part A: Output on wire 'a' is {}.".format(solution[0]))
