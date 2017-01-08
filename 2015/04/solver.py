@@ -11,7 +11,7 @@ def solver(file, progress=True, progress_step=100000):
   """
   Take a file object with input and solve AoC 2015.04 problem on the input.
 
-  Outputs progress to STDERR unless silenced
+  Outputs progress to STDERR unless silenced.
 
   Keyword arguments:
   file          --- a file object to read input from
