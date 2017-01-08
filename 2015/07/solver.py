@@ -1,4 +1,4 @@
-"""AoC 2015.XX problem solver.
+"""AoC 2015.07 problem solver.
 
 Takes input from STDIN by default.
 
@@ -83,7 +83,7 @@ def compute(wire_id, wire_specs):
 
 def solver(file):
   """
-  Take a file object with input and solve AoC 2015.XX problem on the input.
+  Take a file object with input and solve AoC 2015.07 problem on the input.
 
   Keyword arguments:
   file          --- a file object to read input from
