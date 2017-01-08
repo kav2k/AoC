@@ -7,7 +7,7 @@ Takes input from STDIN by default.
 from hashlib import md5
 
 
-def solver(file, progress=True, progress_step=100000):
+def solver(file, progress=True, progress_step=10000):
   """
   Take a file object with input and solve AoC 2015.04 problem on the input.
 
@@ -43,7 +43,7 @@ def solver(file, progress=True, progress_step=100000):
       return (solution_five, solution_six)
 
     if(progress and index > 0 and (index % progress_step == 0)):
-      sys.stderr.write("\rHashed up to {}... ".format(index))
+      sys.stderr.write("\rHashed up to {}.. ".format(index))
 
     index += 1
 

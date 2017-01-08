@@ -59,6 +59,8 @@ def solver(file, progress=True):
   """
   Take a file object with input and solve AoC 2015.06 problem on the input.
 
+  Outputs progress to STDERR unless silenced.
+
   Keyword arguments:
   file          --- a file object to read input from
   progress      --- boolean, whether to output progress to stderr (default=True)
@@ -75,7 +77,7 @@ def solver(file, progress=True):
     execute_bright(bright_lights, instruction)
     if progress:
       counter += 1
-      sys.stderr.write("\rProcessed {:03d} instructions".format(counter))
+      sys.stderr.write("\rProcessed {:03d} instructions..".format(counter))
 
   if progress:
     sys.stderr.write("\n")
