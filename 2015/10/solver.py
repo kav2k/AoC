@@ -63,5 +63,5 @@ if __name__ == "__main__":
   import sys
   solution = solver(sys.stdin)
 
-  print("Part A: Solution is {}.".format(solution[0]))
-  print("Part B: Solution is {}.".format(solution[1]))
+  print("Part A: Length after 40 steps is {}.".format(solution[0]))
+  print("Part B: Length after 50 steps is {}.".format(solution[1]))
