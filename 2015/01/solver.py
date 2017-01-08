@@ -27,7 +27,7 @@ def solver(file):
   Take a file object with input and solve AoC 2015.01 problem on the input.
 
   Keyword arguments:
-  file      --- a file object to iterate over
+  file      --- a file object to read input from
   """
   level = 0
   step = 0
